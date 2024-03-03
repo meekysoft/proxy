@@ -14,7 +14,7 @@ A one-time setup is required to equip your local machine with Terraform and cred
 
 - Install Terraform by following the simple instructions [here](https://developer.hashicorp.com/terraform/install).
 - Log into your AWS account and create an "IAM User" (search for the "IAM" service using the search box at the top of the page)
-  - Name the whatever you like - "terraform" is probably a good choice.
+  - Name the user whatever you like - "terraform" is probably a good choice.
   - Don't bother ticking the box that grants the user access to the console.
   - When asked to "Set Permissions" choose "Attach Policies Directly".
   - Use the search box to locate the `AdministratorAccess` policy, tick it, and click the "Next" button.
