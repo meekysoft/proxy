@@ -22,8 +22,6 @@ resource "aws_instance" "ec2_instance" {
   user_data                   = templatefile("${path.module}/userdata.tftpl", { proxy_to_ip = var.proxy_to_ip, proxy_to_port = var.proxy_to_port })
   user_data_replace_on_change = true
 
-  key_name = "pete-jun23"
-
   tags = {
     Name = "Proxy"
   }
