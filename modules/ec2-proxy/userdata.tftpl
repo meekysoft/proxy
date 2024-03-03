@@ -6,6 +6,10 @@ server {
     listen 80;
     location / {
         proxy_pass http://${proxy_to_ip}:${proxy_to_port};
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "Upgrade";
+            proxy_set_header Host $host;
     }
 }
 EOF
