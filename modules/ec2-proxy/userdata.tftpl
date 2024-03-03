@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+sudo amazon-linux-extras install -y nginx1
+sudo cat << EOF > /etc/nginx/conf.d/proxy.conf
+server {
+    listen 80;
+    location / {
+        proxy_pass http://${proxy_to_ip}:${proxy_to_port};
+    }
+}
+EOF
+sudo systemctl start nginx
