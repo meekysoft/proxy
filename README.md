@@ -2,7 +2,7 @@
 
 This repo contains a set of Terraform Modules that results in an HTTP Proxy which can be used to relay services hosted on your home network to the public, without disclosing your home IP address.
 
-The Proxy server itself runs on EC2 using Nginx, and several dedicataed (free-of-charge) network resources are created to support this (to avoid interference/conflicts with existing network configurations you may have) - specifically...
+The Proxy server itself runs on EC2 using Nginx, and several dedicated (free-of-charge) network resources are created to support this (to avoid interference/conflicts with existing network configurations you may have) - specifically...
 
 - A VPC
 - A Public Subnet (with Internet Gateway)
